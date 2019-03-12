@@ -1,0 +1,13 @@
+{
+  "goods":[
+    {"id":1,"date":"2018-12-19 17:09:23 ","orderID":"83590513794","shop":"二手教材专营店","shopID":"10","owner":"李四","status":"已完成","imgUrl":"images/计算机网络/计算机网络.jpg","price":"45.50","title":"计算机网络","publish":" 人民文学出版社","num":"303","number":1,"author":"张三", "total":45.0,"payType":"在线支付"},
+    {"id":2,"date":"2018-12-18 17:09:23 ","orderID":"23456666788","shop":"二手图书旗舰店","shopID":"10","owner":"张三","status":"已完成","imgUrl":"images/高等数学.jpg","price":"40.00","title":"高等数学","publish":"人民教育出版社","num":"403","number":1,"author":"李四","total":45.0,"payType":"在线支付"},
+    {"id":3,"date":"2018-12-18 17:09:23 ","orderID":"35465768755","shop":"二手图书旗舰店","shopID":"10","owner":"张三","status":"待收货","imgUrl":"images/单片机原理及接口技术.jpg","price":"35.00","title":" 单片机原理及接口技术","publish":"机械工业出版社","num":"503","number":1,"author":"张三","total":45.0,"payType":"货到付款"},
+    {"id":4,"date":"2018-12-18 17:09:23 ","orderID":"89786756445","shop":"二手图书旗舰店","shopID":"10","owner":"张三","status":"待收货","imgUrl":"images/电工学.jpg","price":"25.00","title":"电工学","publish":" 人民邮电出版社","num":"320","number":1,"author":"张三","total":45.0,"payType":"在线支付"}
+  ],
+  "NoComment":[
+    {"id":3,"date":"2018-12-18 17:09:23 ","orderID":"23456666788","shop":"二手图书旗舰店","shopID":"10","owner":"张三","status":"待收货","imgUrl":"images/单片机原理及接口技术.jpg","price":"35.00","title":" 单片机原理及接口技术","publish":"机械工业出版社","num":"503","number":1,"author":"张三","total":45.0,"payType":"货到付款"},
+    {"id":4,"date":"2018-12-18 17:09:23 ","orderID":"89786756445","shop":"二手图书旗舰店","shopID":"10","owner":"张三","status":"待收货","imgUrl":"images/电工学.jpg","price":"25.00","title":"电工学","publish":" 人民邮电出版社","num":"320","number":1,"author":"张三","total":45.0,"payType":"在线支付"}
+
+  ]
+}

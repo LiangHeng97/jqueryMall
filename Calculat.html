@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结算</title>
+    <link rel="icon " href="icon/favicon.ico">
+
+    <!--css代码-->
+    <link href="css/market.css" rel="stylesheet" type="text/css">
+    <!--jquery库-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!--js代码-->
+    <script src="js/common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/js/distpicker.data.js"></script>
+    <script type="text/javascript" src="js/js/distpicker.js"></script>
+    <script type="text/javascript" src="js/js/main.js"></script>
+</head>
+<body>
+<div class="headerBar">
+    <div class="topBar">
+        <div class="comWidth">
+            <div class="leftArea">
+                <a id='hello'  href="login.html" class="link-login">您好，<span>请登录</span></a>&nbsp;&nbsp;
+                <a id='hello2' href="registe.html" class="link-regist style-red">免费注册</a>
+            </div>
+            <div class="rightArea">
+
+                <ul class="fr">
+                    <span class="fore1" ><a target="_blank" href="shopcar.html" style="text-align: center"><img class='shopCar' src="icon/shopCar.png">购物车</a></span>
+                    <span class="fore1" ><a target="_blank" href="order.html">我的订单</a></span>
+                    <span class="fore1" ><a href="account.html">个人中心</a></span>
+                </ul>
+            </div>
+        </div>
+    </div><!--topBar结束-->
+    <div class="logoBar">
+        <div class="comWidth">
+            <div class="logo fl">
+                <a href="index.html"><img class='company_logo'src="images/logo.jpg" alt="XX网"/></a>
+            </div>
+            <div class="stepBox fr">
+                <div class="steps">
+                    <div class="first">
+                        <div class="title">
+                            购物车
+                        </div>
+                        <div class="big-circle">
+                            <div class="min-circle round_active">
+                                √
+                            </div>
+                        </div>
+                        <div class="big-line">
+                            <div class="min-line line_active"></div>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="title">
+                            填写核对订单信息
+                        </div>
+                        <div class="big-circle">
+                            <div class="min-circle round_active">
+                                √
+                            </div>
+                        </div>
+                        <div class="big-line">
+                            <div class="min-line"></div>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <div class="title">
+                            成功提交订单
+                        </div>
+                        <div class="big-circle">
+                            <div class="min-circle ">
+                                √
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--logoBar结束-->
+</div>
+
+    <!--新增收货地址的弹框-->
+    <div class="addaddressdiv">
+        <input disabled="true" style="float: left; height: 30px" value="新增收货人信息">
+        <input class="cancel" type="button" style="float: right; width: 50px; height: 30px"; value="关闭" /><br/><br/>
+        <div style="width: 100%; height: 30px"></div>
+        <label style="float: left;width: 50px; font-size: 14px"><em style="color: red">*</em> 地址</label>
+        <div id="distpicker1">
+            <select></select>
+            <select></select>
+            <select></select>
+        </div><br>
+        <label style="float: left;width: 70px; font-size: 14px"><em style="color: red">*</em> 收货人</label>
+        <input class='newname'style="width: 200px; border: 1px solid silver; height: 20px"><br><br>
+        <label style="float: left;width: 70px; font-size: 14px"><em style="color: red">*</em> 详细地址</label>
+        <input class="newaddress" style="width: 200px; border: 1px solid silver; height: 20px">
+        <br><br>
+        <label style="float: left;width: 70px; font-size: 14px"><em style="color: red">*</em> 手机号码</label>
+        <input class="newphone" style="width: 200px; border: 1px solid silver; height: 20px"><br><br>
+        <input type="button" class="save" style="width:200px; margin-top: 100px;margin-left: 100px; background-color: red;opacity: 0.8; color: white" value="保存收货人信息">
+    </div>
+
+    <div class="calculate">
+        <div class="address">
+            <h4>收货人信息</h4>
+            <div class="selectAddress">
+                <input type="checkbox" style="width: 20px;height: 20px; "checked="true">
+                <input class="activeAddress" disabled="true" value="梁恒">
+                <label>梁恒</label>
+                <label>四川省</label>
+                <label>成都市</label>
+                <label> 成华区 城区 一环路东一段电子科技大学沙河校区-欣苑学生公寓</label>
+                <label class="phone">15229788361</label>
+                <input class="addAddress" type="button"value="新增收货地址"  style="color: white"></input>
+            </div>
+            <div style="width: 100%; height: 20px"></div>
+        </div>
+        <div class="selectpayment">
+            <h4>选择支付方式</h4>
+            <input class="activeBtn" type="button" value="在线支付"></input>
+            <input type="button" value="货到付款"></input>
+        </div>
+        <div class="DetailedList">
+            <h4>配送清单</h4>
+            <!--<div>-->
+                <!--<img src="images/计算机组成原理.jpg">-->
+                <!--<p style="margin-left: 10px; font-size: 12px">计算机组成原理 高等教育出版社 第三部 罗克著</p>-->
+                <!--<p style="margin-right: 50px; float: right">x<label>1</label></p>-->
+                <!--<p style="color: red; float: right; margin-right: 200px">￥ 25.0</p>-->
+            <!--</div>-->
+        </div>
+        <div class="gotoPay">
+            <label style="float: right">应付金额￥： <input disabled="true" value="25.0" style="color: red; font-size: 20px"></label><input disabled="true">
+            <div class="address" style="float: right; margin-right: 50px">
+                <label>配送至：</label>
+                <label>四川省</label>
+                <label>成都市</label>
+                <label> 成华区 城区 一环路东一段电子科技大学沙河校区-欣苑学生公寓</label>
+                <label >收货人</label>
+                <label>梁恒</label>
+                <label>15229788361</label>
+            </div>
+            <br><br><br><br><br>
+            <input class='buy'type="button" style="width: 150px; height: 40px;float: right;margin-right: 50px; background-color: red; color: white;font-size: 20px;margin-bottom: 30px" value="提交订单">
+        </div>
+    </div>
+</div>
+
+
+
+<div class="back-to-top" style="display:none"><a>返回<br />顶部</a></div>
+
+<div class="footer">
+    <p><a href="#">网站简介</a><i>|</i><a href="#">公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i> <a href="#">联系我们</a><i>|</i>客服热线：400-675-1234</p>
+    <p>Copyright &copy; 2007 - 2018 版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+</div>
+</body>
+</html>
+
+<script>
+    //加载json文件中的内容
+    $.ajax({
+        type:"get",
+        url: 'Calculate.json',
+        dataType: 'json',
+        success: function (res) {
+            $.each(res.user, function(idx,val) {
+                $('.calculate input:eq(1)').val(val.username)
+                $('.calculate label:eq(0)').val(val.username)
+                $('.calculate label:eq(1)').val(val.provience)
+                $('.calculate label:eq(2)').val(val.city)
+                $('.calculate label:eq(3)').val(val.detaile)
+                $('.calculate label:eq(4)').val(val.phone)
+                $('.address label:eq(1)').val(val.provience)
+                $('.address label:eq(2)').val(val.city)
+                $('.address label:eq(3)').val(val.area+" "+val.detaile)
+                $('.address label:eq(5)').val(val.name)
+                $('.address label:eq(6)').val(val.phone)
+            })
+            $.each(res.goods, function(idx,val){
+                var str= '<div class="goodsList" style="width: 100%"><img src="'+val.imgUrl+'">\n' +
+                    '            <p style="margin-left: 10px; font-size: 12px">'+val.title+" "+val.author+" "+val.publish+'</p>\n' +
+                    '            <p style="margin-right: 50px; float: right">x<label>'+val.number+'</label></p>\n' +
+                    '            <p style="color: red; float: right; margin-right: 200px">￥ '+ val.price+'</p></div><br><br><br><br><br><br><br><br><br>'
+                $('.DetailedList').append(str)
+                totalPrice1()
+            })
+        }
+    })
+
+    jQuery(function ($) {
+        //当滚动条的位置处于距顶部20像素以下时，跳转链接出现，否则消失
+        $(window).scroll(function(){
+            if (jQuery(window).scrollTop()>20){
+                jQuery(".back-to-top").fadeIn(2000);
+            }
+            else
+            {
+                jQuery(".back-to-top").fadeOut(2000);
+            }
+        });
+
+        //当点击跳转链接后，回到页面顶部位置
+
+        jQuery(".back-to-top").click(function(){
+            jQuery('body,html').animate({scrollTop:0},200);
+            return false;
+        });
+    });
+
+    $("#distpicker1").distpicker({
+        autoSelect: false
+    });
+    $('.addAddress').click(function () {
+        $('.addaddressdiv').show()
+    })
+    $('.cancel').click(function () {
+        $('.addaddressdiv').hide()
+    })
+    $('.save').click(function () {
+        var provience= $('#distpicker1 select:eq(0)').val()
+        var city=$('#distpicker1 select:eq(1)').val()
+        var area=$('#distpicker1 select:eq(2)').val()
+        var name=$('.newname').val()
+        var address=$('.newaddress').val()
+        var phone= $('.newphone').val()
+        $.ajax({
+            type:'post',
+            url:'shopCar.json',
+            data:{ 'province':provience, 'city':city,'area':area,"name":name,'address':address,'phone':phone},
+            success: function () {
+                var str='<div class="selectAddress"><input type="checkbox" style="width: 20px;height: 20px;" >\n' +''+
+                    '            <input class="unactiveAddress" disabled="true" value="'+name+'">\n' +
+                    '            <label>'+name+'</label>\n' +
+                    '            <label>'+provience+'</label>\n' +
+                    '            <label>'+city+'</label>\n' +
+                    '            <label>'+address+'</label>\n' +
+                    '            <label class="phone">'+phone+'<div style="width: 100%; height: 20px"></div></label></div>'
+                $('.address:eq(0)').append(str)
+                $('.addaddressdiv').hide()
+            }
+        })
+    })
+
+
+    function totalPrice1(){
+        var total=0
+        $('.goodsList').each(function (idx,val) {
+            var number=parseInt($('.goodsList:eq('+idx+') label:eq(0)').text())
+            var price= parseFloat($('.goodsList:eq('+idx+') p:eq(2)').text().split('￥ ')[1])
+            total+= parseFloat(number*price)
+        })
+        $('.gotoPay input:eq(0)').val(total)
+    }
+
+    $('.selectAddress input:eq(0)').click(function (event) {
+        // alert($('.selectAddress:eq(0) input:eq(1)').val())
+        // $('.selectAddress:eq(0) input:eq(1)').css('border',"1px solid silver")
+        // $('.selectAddress:eq(0) input:eq(1)').addClass("unactiveAddress")
+        $('.selectAddress:eq(0) input:eq(1)').removeClass("activeAddress")
+
+        if(!$(this).attr('checked')){
+            $('.address input:eq(0)').each(function (idx, val) {
+                $('.address:eq('+idx+') input:eq(0').attr('checked', false)
+                // $('.address:eq('+idx+') input:eq(1)').removeClass("unactiveAddress")
+                $('.selectAddress:eq('+idx+') input:eq(1)').addClass("unactiveAddress")
+
+            })
+            $(this).attr('checked',false)
+        }
+        else{
+            $('.selectarea').each(function (idx, val) {
+                $('.address:eq('+idx+') input:eq(0').attr('checked', false)
+                $('.address:eq('+idx+') input:eq(0)').removeClass("activeAddress")
+            })
+            $(this).attr('checked',true)
+            $(this).next().addClass('activeAddress')
+        }
+        event.stopPropagation()
+    })
+
+    $('body').on('click', '.address input:eq(0)',function(event) {
+        if($(this).attr('checked')){
+            $('.address input:eq(0)').each(function (idx, val) {
+                $('.address:eq('+idx+') input:eq(0').attr('checked', false)
+                $('.address:eq('+idx+') input:eq(0)').removeClass("activeAddress")
+            })
+            $(this).attr('checked',false)
+        }
+        else{
+            $('.selectarea').each(function (idx, val) {
+                $('.address:eq('+idx+') input:eq(0').attr('checked', false)
+                $('.address:eq('+idx+') input:eq(0)').removeClass("activeAddress")
+            })
+            $(this).attr('checked',true)
+            $(this).next().addClass('activeAddress')
+        }
+        event.stopPropagation()
+    })
+
+    $('.selectpayment input').click(function () {
+        $('.selectpayment input').removeClass('activeBtn')
+        $(this).addClass('activeBtn')
+    })
+
+    $('.buy').click(function () {
+        if($('.selectpayment input:eq(0)').hasClass('activeBtn')){
+            window.location.href='payment.html?type=onlinePayment'
+        }
+        else{
+            window.location.href='payment.html?type=CashPayment'
+        }
+
+    })
+
+    $(document).ready(function () {
+        var name=sessionStorage.getItem('name');
+        if(name!==null&&(name)!==undefined){
+            if((/^[a-zA-Z0-9]{6,11}$/).test(name)){
+                $('#hello2').hide();
+                $('#hello  ').html('您好，'+name);
+            }
+        }
+    })
+
+</script>

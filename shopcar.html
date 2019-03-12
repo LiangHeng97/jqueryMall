@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="icon " href="icon/favicon.ico">
+
+    <!--css代码-->
+    <link href="css/market.css" rel="stylesheet" type="text/css">
+    <!--jquery库-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!--js代码-->
+    <script src="js/common.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="totalInfo">
+    <input type="checkbox" name="items" value="1" class="checkall" style="margin-left: 80px"/>
+    <label style="margin-left: -20px; margin-top: 25px">全选</label>
+
+    <a href="Calculat.html"><input class="totalbutton" type="button" value="去结算"></a>
+    <span style="float: right; margin-right: 50px">总价：<label style="color: red; font-size: 20px">0 </label> 元</span>
+    <span style="float: right; margin-right: 50px">已选择<em style="color: red"> 0 </em> 件商品</span>
+</div>
+<div class="headerBar">
+    <div class="topBar">
+        <div class="comWidth">
+            <div class="leftArea">
+                <a id='hello'  href="login.html" class="link-login">您好，<span>请登录</span></a>&nbsp;&nbsp;
+                <a id='hello2'  href="registe.html" class="link-regist style-red">免费注册</a>
+            </div>
+            <div class="rightArea">
+                <ul class="fr">
+                    <span class="fore1" ><a target="_blank" href="shopcar.html" style="text-align: center"><img class='shopCar' src="icon/shopCar.png">购物车</a></span>
+                    <span class="fore1" ><a target="_blank" href="order.html">我的订单</a></span>
+                    <span class="fore1" ><a href="account.html">个人中心</a></span>
+                </ul>
+            </div>
+        </div>
+    </div><!--topBar结束-->
+    <div class="logoBar">
+        <div class="comWidth">
+            <div class="logo fl">
+                <a href="index.html"><img class='company_logo'src="images/logo.jpg" alt="XX网"/></a>
+            </div>
+            <div class="searchBox fl">
+                <input type="text" class="search_text fl" id="key">
+                <!--<input type="submit" value="搜索" class="search_btn fr"/>-->
+                <button class='search_btn'>搜索</button>
+            </div>
+        </div>
+    </div><!--logoBar结束-->
+</div>
+
+<div class="shopCarTitle">
+    <input type="checkbox" name="hobby" value="1" class="checkall" />
+    <label for="checkall" style="float: left; margin-left: -50px">全选</label>
+    <p style="float: left;margin-left: 20px">商品</p>
+    <p style="float:right;margin-right: 40px">操作</p>
+    <p style="float:right;margin-right: 40px">小计</p>
+    <p style="float:right;margin-right: 40px">单价</p>
+    <p style="float:right;margin-right: 30px">数量</p>
+</div>
+
+<div class="goodsContainer">
+    <!--<div class="goods">-->
+        <!--<input type="checkbox">-->
+        <!--<img src="images/计算机组成原理.jpg">-->
+        <!--<a href="index.html"><p style="float: left; margin-left: 20px; margin-top: 20px">计算机组成原理第二版高等教育出版社</p></a>-->
+
+        <!--<input class='deletitem' type="button" value="删除" style="color: red; float: right; width: 30px; margin-right: 40px; margin-top: 20px">-->
+        <!--<span class="smalltotal">20.0</span>-->
+        <!--<span>￥20.0</span>-->
+
+        <!--<div class="selectedNumber">-->
+            <!--<input type="button" class="reduction" value="-"></input>-->
+            <!--<input id='selectNumber' type="text"  value="1">-->
+            <!--<input  type="button" class="plus" value="+"></input>-->
+        <!--</div>-->
+
+    <!--</div>-->
+</div>
+
+<div class="totalInfo-1">
+    <input type="checkbox" name="hobby" value="1" class="checkall" style="margin-left: 80px"/>
+    <label style="margin-left: -20px; margin-top: 25px">全选</label>
+
+    <a href="Calculat.html"><input class="totalbutton" type="button" value="去结算"></a>
+    <span style="float: right; margin-right: 50px">总价：<label style="color: red; font-size: 20px">0 </label> 元</span>
+    <span style="float: right; margin-right: 50px">已选择<em style="color: red"> 0 </em> 件商品</span>
+</div>
+<div class="back-to-top" style="display:none"><a>返回<br />顶部</a></div>
+
+<div class="footer">
+    <p><a href="#">网站简介</a><i>|</i><a href="#">公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i> <a href="#">联系我们</a><i>|</i>客服热线：400-675-1234</p>
+    <p>Copyright &copy; 2007 - 2018 版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+</div>
+
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        var name=sessionStorage.getItem('name');
+        if(name!==null&&(name)!==undefined){
+            if((/^[a-zA-Z0-9]{6,11}$/).test(name)){
+                $('#hello2').hide();
+                $('#hello  ').html('您好，'+name);
+            }
+        }
+    })
+    // window.onload = function () {
+    //     var name=sessionStorage.getItem('name');
+    //     if(name!==null&&(name)!==undefined){
+    //         if((/^[a-zA-Z0-9]{6,11}$/).test(name)){
+    //             $('#hello2').hide();
+    //             $('#hello  ').html('您好，'+name);
+    //         }
+    //     }
+    // }
+
+    $('.checkall').click(function () {
+        if(!$(".checkall:eq(0)").attr("checked")){
+            $('.checkall').each(function (idx, val) {
+                $('.checkall:eq('+idx+')').attr('checked', true)
+            })
+            $('.goods').each(function (idx, val) {
+                $('.goods:eq('+idx+') input:eq(0)').attr('checked', true)
+            })
+        }
+        else{
+            $('.checkall').each(function (idx, val) {
+                $('.checkall:eq('+idx+')').attr('checked', false)
+            })
+            $('.goods').each(function (idx, val) {
+                $('.goods:eq('+idx+') input:eq(0)').attr('checked', false)
+            })
+        }
+        totalPrice()
+    });
+
+    function totalPrice(){
+        var copies = 0;
+        var total = 0;
+        $('.goods').each(function (idx, val) {
+            if($('.goods:eq('+idx+') input:eq(0)').attr('checked')){
+                var number=$('.goods:eq('+idx+') .selectNumber').val()
+                console.log(number)
+                var price= parseFloat($('.goods:eq('+idx+') span:eq(1)').text().split('￥')[1])
+                total+=parseFloat(number* price)
+                copies=copies+parseInt(number)
+            }
+        })
+        $('.totalInfo span:eq(0) label').text(total)
+        $('.totalInfo span:eq(1) em').text(copies)
+        $('.totalInfo-1 span:eq(0) label').text(total)
+        $('.totalInfo-1 span:eq(1) em').text(copies)
+    };
+
+    $('body').on('click','.reduction',function () {
+        var number= $(this).next().val()
+        if(number>1){
+            --number;
+            $(this).next().val(number)
+            var price=parseFloat($(this).parent().prev().text().split('￥')[1])
+            price*=number;
+            $(this).parent().prev().prev().text(price)
+        }
+        else{
+            $(this).next().val(0)
+            $(this).parent().prev().prev().text('0')
+        }
+        totalPrice()
+    });
+    $('body').on('click','.plus',function () {
+        var number= $(this).prev().val()
+        number++;
+        var price=parseFloat($(this).parent().prev().text().split('￥')[1])
+        price*=number;
+        $(this).prev().val(number)
+        $(this).parent().prev().prev().text(price)
+        totalPrice()
+    });
+
+    $('body').on('click', '.goods input', function () {
+        if($(this).attr('checked')){
+            $(this).attr('checked',false)
+        }
+        else{
+            $(this).attr('checked',true)
+        }
+        totalPrice()
+    })
+
+
+   $('body').on('click', '.deletitem',function () {
+       var div= $(this).parent()
+       var id= $(this).prev().attr('href').split('?')[1].split('=')[1]
+       console.log(id)
+       $.ajax({
+           type: 'post',
+           url: 'shopCar.json',
+           data:{"id":id},
+           success: function () {
+               div.remove()
+               totalPrice()
+           }
+       })
+
+   })
+
+    $.ajax({
+        type: 'get',
+        url:'shopCar.json',
+        dataType: 'json',
+        success:function(res){
+            $.each(res.goods, function(idx,val) {
+                var str='<div class="goods">\n' +
+                    '        <input type="checkbox">\n' +
+                    '        <img src='
+                str+= val.imgUrl+"><a href=detail.html?id="+val.id+"><p style=\"float: left; margin-left: 20px; margin-top: 20px\">"+val.title+" "+val.publish+
+                        '</p></a>\n' +
+                    '\n' +
+                    '        <input class=\'deletitem\' type="button" value="删除" style="color: red; float: right; width: 30px; margin-right: 40px; margin-top: 20px">\n' +
+                    '        <span class="smalltotal">'+val.price+'</span>\n' +
+                    '        <span> ￥'+val.price+'</span>\n' +
+                    '\n' +
+                    '        <div class="selectedNumber">\n' +
+                    '            <input type="button" class="reduction" value="-"></input>\n' +
+                    '            <input class=\'selectNumber\' type="text"  value="1">\n' +
+                    '            <input  type="button" class="plus" value="+"></input>\n' +
+                    '        </div>\n' +
+                    '\n' +
+                    '    </div>\n' +
+                    '\n'
+                $(".goodsContainer").append(str)
+            })
+        }
+    });
+
+    jQuery(function ($) {
+        //当滚动条的位置处于距顶部20像素以下时，跳转链接出现，否则消失
+        $(window).scroll(function(){
+            if (jQuery(window).scrollTop()>20){
+                jQuery(".back-to-top").fadeIn(2000);
+            }
+            else
+            {
+                jQuery(".back-to-top").fadeOut(2000);
+            }
+        });
+
+        //当点击跳转链接后，回到页面顶部位置
+
+        jQuery(".back-to-top").click(function(){
+            jQuery('body,html').animate({scrollTop:0},200);
+            return false;
+        });
+    });
+
+    $(window).scroll(function () {
+        var totalheight = parseFloat($(window).height()) + parseFloat($(window).scrollTop());
+        var documentheight = parseFloat($(document).height());
+        if (documentheight - totalheight <= 200) {
+            $('.totalInfo').hide();
+        }
+        else{
+            $('.totalInfo').show();
+        }
+    });
+</script>

@@ -1,0 +1,20 @@
+{
+  "goods":[
+    {"id":1,"imgUrl":"images/计算机网络/计算机网络.jpg","price":"45.50","title":"计算机网络","publish":" 人民文学出版社","num":"303","number":1},
+    {"id":2,"imgUrl":"images/高等数学.jpg","price":"40.00","title":"高等数学","publish":"人民教育出版社","num":"403","number":1},
+    {"id":3,"imgUrl":"images/单片机原理及接口技术.jpg","price":"35.00","title":" 单片机原理及接口技术","publish":"机械工业出版社","num":"503","number":1},
+    {"id":4,"imgUrl":"images/电工学.jpg","price":"25.00","title":"电工学","publish":" 人民邮电出版社","num":"320","number":1},
+    {"id":5,"imgUrl":"images/电路.jpg","price":"15.00","title":"电路","publish":" 人民文学出版社","num":"308","number":1},
+    {"id":6,"imgUrl":"images/机械工程测试技术基础.jpg","price":"55.00","title":" 机械工程测试技术基础","publish":"人民文学出版社","num":"603","number":1},
+    {"id":7,"imgUrl":"images/计算机控制技术与应用.jpg","price":"45.00","title":" 计算机控制技术与应用","publish":"上海人民出版社","num":"703","number":1},
+    {"id":8,"imgUrl":"images/计算机组成原理.jpg","price":"30.00","title":" 计算机组成原理","publish":"人民文学出版社","num":"803","number":1},
+    {"id":9,"imgUrl":"images/马克思主义基本原理.jpg","price":"35.00","title":" 马克思主义基本原理","publish":"电子工业出版社","num":"903","number":1},
+    {"id":10,"imgUrl":"images/管理运筹学.jpg","price":"33.00","title":"管理运筹学","publish":" 电子工业出版社","num":"903","number":1},
+    {"id":11,"imgUrl":"images/理论力学.jpg","price":"45.00","title":"理论力学","publish":" 电子工业出版社","num":"903","number":1},
+    {"id":12,"imgUrl":"images/企业管理概论.jpg","price":"45.00","title":"企业管理概论","publish":" 电子工业出版社","num":"903","number":1},
+    {"id":13,"imgUrl":"images/应用文写作.jpg","price":"45.00","title":"应用文写作","publish":" 电子工业出版社","num":"903","number":1},
+    {"id":14,"imgUrl":"images/电磁场与电磁波.jpg","price":"45.00","title":"电磁场与电磁波","publish":" 电子工业出版社","num":"903","number":1},
+    {"id":15,"imgUrl":"images/线性代数.jpg","price":"45.00","title":"线性代数","publish":" 电子工业出版社","num":"903","number":1},
+    {"id":16,"imgUrl":"images/工程力学.jpg","price":"45.00","title":"工程力学","publish":" 电子工业出版社","num":"903","number":1}
+  ]
+}

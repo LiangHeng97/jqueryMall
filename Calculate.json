@@ -1,0 +1,9 @@
+{
+  "goods":[
+    {"id":1,"imgUrl":"images/计算机网络/计算机网络.jpg","price":"45.50","title":"计算机网络","publish":" 人民文学出版社","num":"303","number":1,"author":"张三"},
+    {"id":2,"imgUrl":"images/高等数学.jpg","price":"40.00","title":"高等数学","publish":"人民教育出版社","num":"403","number":1,"author":"李四"}
+  ],
+  "user":[
+    {"username":"梁恒","provience":"四川省","city":"成都市","area":"成华区","detaile":"一环路东一段电子科技大学沙河校区-欣苑学生公寓","phone":15229788361}
+  ]
+}

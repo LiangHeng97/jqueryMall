@@ -1,0 +1,1096 @@
+.body-container{min-height:100%;height:auto !important;height:100%;position:relative;}
+.topBar{
+    height:32px;
+    background-color:#F7F7F7;
+    line-height:30px;
+}
+.topBar a:hover{
+    color:red;
+}
+.comWidth{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin: 0; padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style: none;}
+input,select,textarea{outline: none;border: none;background: none;}
+textarea{resize: none;}
+a{text-decoration: none;color: #656565;}
+/*清除浮动*/
+/*.clearfix:after{content: "";display: block;clear: both;}*/
+/*.clearfix{zoom:1}*/
+.fl{float: left;}
+
+.leftArea{
+    float:left;
+}
+
+.rightArea{
+    float:right;
+}
+.fr{
+    float: right;
+}
+
+
+.fore1{
+    position: relative;
+    float: right;
+    /*color: #F7F7F7;*/
+    width:60px;
+    height: 28px;
+    font-size: 12px;
+    border-style: solid;
+    border-color: white;
+    border-right-color: white;
+    border-right-width: thin;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    clear-side: both;
+}
+.shopCar{
+    width:10px;
+    height: 10px;
+    background-color:#FF8800;
+    margin-top:10px;
+    text-align: center;
+    line-height:30px;
+}
+
+.logoBar{
+    height:85px;
+    background-color: white;
+}
+
+.logo{
+    padding-left:41px;
+    padding-top:5px;
+}
+
+.company_logo{
+    heigth: 30px;
+    width: 120px;
+}
+
+.searchBox{
+    width:500px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border: 1px solid #FF8C00;
+}
+
+.search_text{
+    width:428px;
+    height:38px;
+    line-height: 35px\9;
+    border: 1px solid #FF8C00;
+    background-color:#FFF;
+    font-size:14px;
+    font-family: 微软雅黑;
+}
+
+.search_btn{
+    width:70px;
+    height:40px;
+    font-size:14px;
+    font-family: 微软雅黑;
+    font-style: normal;
+    background-color:#FF8C00;
+}
+
+.navBox{
+    height:35px;
+    color: #1d1d1d;
+    border: 0px;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    background-color: #bce8f1;
+}
+.navBox a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #e4393c;
+}
+.nav,.shopClass h3{
+    font-family: 微软雅黑;
+}
+
+.nav{
+    line-height:35px;
+    color: black;
+}
+
+.nav li{
+    float:left;
+    color: black;
+}
+
+.nav a{
+    height:35px;
+    display:inline-block;
+    padding:0 35px;
+    color:black;
+}
+
+.nav .active{
+    background-color:#4593FD;
+}
+
+.navList{
+    height: 400px;
+    margin-top: 0px;
+}
+
+.topmenu
+{
+    height: 372px;
+    display: block;
+    float: left;
+    position: relative;
+    width: 220px;
+    border: 2px solid red;
+    /*margin: 0;*/
+    padding: 0;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.toptitle
+{
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    font-size: 11pt;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    background: white;
+    padding-left: 20px;
+}
+.topmenu li
+{
+    height: 30px;
+    line-height: 30px;
+    font-size: 11pt;
+    list-style-type: none;
+    text-align: left;
+    padding-left: 8px;
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.topmenu li a
+{
+    text-decoration: none;
+    color: #313131;
+}
+.topmenu li a:hover
+{
+    text-decoration: underline;
+    font-weight: normal;
+    color: #e4393c;
+}
+.topmenu .lihover /*鼠标移动到上面时，应用的样式*/
+{
+    border: 0px solid #DDD;
+    border-right: 0;
+    box-shadow: 0 0 8px #DDD;
+    -moz-box-shadow: 0 0 8px #DDD;
+    -webkit-box-shadow: 0 0 8px #DDD;
+    background-image: none;
+    /*height:60px;*/
+    border-left:0px solid #e4393c;
+}
+.topmenu .lihover .submenu /*悬浮层*/
+{
+    display: block;
+}
+
+.topmenu .lihover span /*白色小方框*/
+{
+    background: white;
+    display: inline-block;
+    z-index: 20;
+    width: 20px;
+    height: 60px;
+    float: right;
+    position: relative;
+
+}
+
+.topmenu .lihover b
+{
+    display:block;
+    height:30px;
+    line-height:30px;
+    font-weight:normal;
+    font-size:10pt;
+}
+.submenu
+{
+    display: none;
+    /*width: 730px;*/
+    overflow: hidden;
+    left: 220px;
+    top: 0px;
+    position: absolute;
+    border: 1px solid #DDD;
+    z-index: 4;
+    background: white;
+    box-shadow: 0 0 8px #DDD;
+    -moz-box-shadow: 0 0 8px #DDD;
+    -webkit-box-shadow: 0 0 8px #DDD;
+}
+.leftdiv
+{
+    float: left;
+    width: 490px;
+    margin: 5px;
+}
+.rightdiv
+{
+    float: left;
+    width: 200px;
+    margin: 5px;
+}
+
+.leftdiv dl
+{
+    display: block;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 6px;
+    overflow: hidden;
+}
+.leftdiv dl dt
+{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: right;
+    height: 22px;
+    line-height: 22px;
+    padding-right: 6px;
+}
+
+.leftdiv dl dt a
+{
+    color: #e4393c;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 10pt;
+}
+.leftdiv dl dd
+{
+    display: block;
+    overflow: hidden;
+}
+.leftdiv dl dd a
+{
+    display: block;
+    float: left;
+    border-left: 1px solid #CCC;
+    color: #737373;
+    font-size: 9pt;
+    padding: 0 8px;
+    height: 14px;
+    line-height: 14px;
+    margin: 4px 0;
+}
+
+.rightdiv dl dd
+{
+    margin: 3px 0;
+}
+
+.rightdiv dl dt
+{
+    color: #e4393c;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.rightdiv dl dd a
+{
+    font-size: 9pt;
+    color: #737373;
+    line-height: 22px;
+}
+.rightdiv dl dd a:hover
+{
+    color: #737373;
+    font-weight: normal;
+}
+
+.topmenu li b
+{
+    display:none;
+}
+
+.rightPic
+{
+    position:relative;
+    right:-35px;
+    bottom:-20px;
+}
+
+/*ul{ list-style: none; }*/
+#ads{
+    /*width: 728px; */
+    width: calc(100% - 540px) ;
+    height: 370px;
+    border: 3px solid #999;
+    position: relative;
+    float: left;
+    margin-left: 0px;
+}
+#ads img{
+    /*width: calc(100% - 100px);*/
+    width: 100%;
+    height: 370px;
+    position: absolute;
+    left: 0; top: 0;
+    opacity: 0;
+    animation-timing-function: linear;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+}
+#ads img.show{
+    animation-name: show;
+}
+#ads img.unshow{
+    animation-name: disapper;
+}
+#ads ul{
+    position: absolute;
+    bottom: 10px; left: 240px;
+}
+#ads ul li{
+    width: 12px; height: 12px;
+    float: left;
+    background: rgba(255,255,255,0.7);
+    margin-right: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#ads ul li.active{ background: orange; }
+@keyframes show{
+    from{opacity: inherit; }
+    to{opacity:1;}
+}
+@keyframes disappear{
+    from{opacity:1;}
+    to{opacity:0;}
+}
+
+
+.info_area{
+    width: 200px;
+    height:370px;
+    background-color: #00c7c7;
+    float: right;
+    margin-right: 50px;
+    border: 2px solid;
+    border-radius:10px;
+}
+
+.hot{
+    /*height: 600px;*/
+    height: auto;
+    background-color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    /*opacity: 0.7;*/
+    border: 2px solid;
+    border-radius: 10px;
+    /*margin:0 auto;*/
+    overflow:hidden
+}
+
+.hot .hot-title{
+    font-family: '微软雅黑';
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px  solid black;
+    /*background-color: black;*/
+    height: 20px;
+    width: calc(100% - 50px);
+    float: left;
+}
+
+.content1{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:140px;
+    /*height: 180px;*/
+    float: left;
+    overflow: hidden;
+}
+
+.hot .cell{
+    width: 140px;
+    height: 180px;
+    border: 1px solid;
+
+}
+.hot .book-img{
+    width: 140px;
+    height: 180px;
+}
+.hot .book-content{
+    text-align: center;
+}
+.hot .book-title{
+
+}
+.hot .book-price{
+    /*margin-bottom: 50px;*/
+}
+
+
+.back-to-top{
+    width: 40px;position:fixed;bottom:100px;right:0px;border:solid 1px red ;cursor:pointer;text-align: center;color: black;
+    opacity: 0.9;
+    border-radius:5px;
+    font-family: '微软雅黑';
+    font-size: 14px;
+}
+.back-to-top a:hover{
+    font-weight: bold;
+    color: #e4393c;
+}
+
+.footer{
+    height: 60px;
+    bottom:0;
+    text-align:center;
+    vertical-align: middle;
+    width: 100%;
+    /*background-color:#D4D4D4;*/
+    line-height:24px;
+    padding:50px 0;
+}
+
+.footer i{
+    font-style:normal;
+    padding:0 5px;
+}
+
+.footer a{
+    color:#000;
+}
+
+.footer a:hover{
+    color:#F60;
+}
+
+
+.login_content .login_div table tr{height:100px; margin-bottom: 20px}
+.login_content .login_div table input{height:98px;width:180px;border:1px solid #ddd;}
+.login_div input{
+    border: silver;
+}
+
+
+.reg_login{width:300px ;margin:10px auto 0 auto;border:5px solid #d7c2ac; margin-bottom: 20px;}
+.reg_login .login{display:inline;width:500px;background-color: white; opacity: 0.68;border-right:1px dashed #ddd; }
+.reg_login .login h1{margin:10px;}
+.reg_login .login table{margin:20px 0;width:100%; border-collapse:separate; border-spacing:5px}
+.reg_login .login table tr{height:55px; }
+.reg_login .login table td{height:55px; border: 1px groove gainsboro ; border-radius: 5px; margin-top: 20px}
+.reg_login .login table input{height:26px;width:180px;border:1px solid black;}
+.reg_login .login table a{color:#00f;}
+
+.reg_login .reg{float:right;display:inline;width:450px;height:360px;}
+.reg_login .reg h1{margin:10px;}
+.reg_login .reg table{margin:20px 0;width:100%;}
+.reg_login .reg table tr{height:55px;}
+.reg_login .reg table input{height:26px;width:180px;border:1px solid #ddd;}
+.reg_login .reg table input.button{width:94px;height:27px;border:0;}
+.reg_login .reg table span{color:#999;}
+
+.regBox{width:628px;margin:50px auto;border:1px solid #CCC; }
+.reg_login table {width:100%;height: 100%;border:0;cursor:pointer;font-size:18px;
+    font-family: 微软雅黑;  text-align: center; vertical-align: middle; opacity: 0.68}
+.reg_login table ,input{width:154px;height:39px;border:0;cursor:pointer;}
+.reg_login table {width:154px;height:50px;border:0;cursor:pointer;margin-top:10px;}
+.reg_item{font-size:14px;line-height:39px;font-family: 微软雅黑;float:left;text-align:center;width:110px;overflow: auto; vertical-align: middle}
+.reg_item i{color:red;font-style:normal;margin-right:5px;}
+.input_item{width:306px;float:left; border: 2px solid lightgray; height: 32px; }
+.input_item input{width:200px;}
+.regBox li{height:70px;vertical-align: top;margin-top: 10px}
+.regBox .autoLogin{height:46px;padding:0;}
+#regbutton{ background-color: #D70000;margin-left: 100px; margin-right: 100px; margin-bottom: 30px; width: calc(100% - 200px);font-size:18px;
+    font-family: 微软雅黑;}
+#loginbutton{ background-color: #D70000;margin-left: 100px; margin-right: 100px; margin-bottom: 30px; width: calc(100% - 200px);font-size:18px;
+    font-family: 微软雅黑;}
+
+.shopinfo{
+    height: 50px;
+    width: 100%;
+    background-color: #5bc0de;
+    overflow: auto;
+    line-height: 50px;
+}
+#shopnamespan{float: right; margin-right: 260px; color: #D70000; font-family: 微软雅黑; font-size: 20px}
+.shoplogo{float: right;margin-right: 260px; width: 60px; height: 60px; display: none; ;position: relative;overflow: auto; border: 2px solid }
+#shoplogopic{width: 50px; height: 40px;}
+.shopinfo a :hover{ color: #D70000; font-size: 14px}
+
+.description_info{
+    position: relative;
+    background-color:#FFF;
+
+    margin-top: 70px;
+    height: 500px;
+    /*position: absolute;*/
+}
+.description{
+    border:1px solid #CCC;
+}
+.description .rightArea{
+    width:688px;
+    border-left:1px solid #CCC;
+}
+.description .leftArea{
+    height: 450px;
+    width:300px;
+    margin-left: 200px;
+
+}
+.description .rightArea{
+    float: right;
+    height: 450px;
+    width:calc(100% - 670px);
+    margin-right: 150px;
+    /*background-color: #D70000;*/
+}
+.description_imgs .big{
+    margin-top: 20px;
+    height:300px;
+    width: 100px;
+    text-align:center;
+}
+.des_smimg{
+    padding-left:1px;
+    width:220px;
+    /*margin: 0 auto;*/
+}
+
+.des_smimg li{
+    float:left;
+    margin-left:-1px;
+}
+
+.des_smimg img{
+    border:1px solid #CCC;
+    width: 50px;
+    height: 70px;
+}
+.des_content{
+    padding:10px;
+}
+.des_content .dl{margin-top: 8px;  overflow: auto; width: 500px;background-color: #dcdcdc;opacity: 0.9;}
+.des_content .dt{
+    width:150px;
+    float:left;
+    /*color:#666;*/
+    text-indent:16px;
+    line-height:25px;
+    font-size: 14px;
+}
+
+
+.des_money{
+    color:#D70000;
+    font-size:18px;
+}
+
+.des_content_tit{font-size:16px;font-family: 微软雅黑;font-weight:bold;line-height:22px;padding:13px 25px;}
+ .select{font-size: 20px;margin-top: 8px;  overflow: auto; height: 200px; }
+.select .dt{ height: 10px; font-size: 16px; margin-top: 15px}
+.select .dd{ height: 10px; margin-left: 50px; float: left; margin-top: 15px;}
+.addShopCar{
+    margin-left:100px;width: 200px;
+    vertical-align: center; font-size: 20px;
+    background-color: #E27A00;
+    height: 50px;line-height: 50px;
+    opacity: 0.8;
+    font-size: 20px;
+}
+.addShopCar input{ width: 200px; font-size: 20px}
+
+.des_content .des_num{
+    line-height:32px;
+    margin-left: 20px;
+    float: left;
+}
+.reduction ,.plus{
+    float: left;
+    /*margin-left: 20px;*/
+    width:20px;
+    text-align:center;
+    line-height:32px;
+    color:#333;
+    border: 1px solid lightgray;
+}
+.des_content .numInput{ width: 50px; float: left; border: 1px solid lightgray; text-align: center; vertical-align: middle;line-height: 32px }
+.numInput input{ width: 50px; text-align: center; vertical-align: middle}
+
+
+.introduce{
+    margin-left: 200px;
+    overflow: auto;
+    height: auto;
+    margin-right: 200px;
+    margin-bottom: 30px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.introduce .book-img{ margin-left: 100px; width: 200px; height: 250px; margin-top: 30px; float: left}
+.introduce .dl{overflow: auto; width: calc(100% - 420px); float: left; margin-top: 30px}
+.introduce .dt{
+    /*width:100px;*/
+    margin-left: 50px;
+    float: left;
+    /*color:#666;*/
+    text-indent:16px;
+    line-height:25px;
+    font-size: 14px;
+}
+.introduce .condition{color: red; font-size: 14px}
+.chapter{ float: left; margin-left: 100px; margin-top: 20px; overflow: auto; width: calc(100% - 420px);}
+
+.detail-container{
+    width: calc(100% - 400px);
+    margin-left: 200px;
+    color:black  ;
+    opacity: 0.8;
+    border: 1px solid lightblue;
+    border-radius: 5px ;overflow: auto;
+}
+.detail-container h1{margin-left: 50px; width: 100px; float: left;}
+.detail-container .active{ color: #D70000}
+
+#comment{
+    width: calc(100% - 400px);
+    float: left;margin-left: 200px;
+    margin-right: 200px;
+    overflow: auto;
+    height: auto;
+    position: relative;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.score_box{
+    margin-top: 30px;
+    padding-left:10px;
+    height:120px;
+}
+.score{
+    font-family: 微软雅黑;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    float:left;
+    margin-right:10px;
+}
+
+.score em{
+    color:#65657D;
+    font-style:normal;
+    font-size:18px;
+}
+
+.score span{
+    font-size: 50px;
+    color:#FF8F00;
+}
+
+.score_speed{
+    float:left;
+    width:calc(100%- 400px);
+    line-height:16px;
+    font-size:12px;
+    margin-top:10px;
+    position:relative;
+}
+
+.score_speed_text{
+    height:16px;
+    background-color:#BDBDBD;
+    color:#FFF;
+    overflow: hidden;
+    margin-bottom:10px;
+}
+
+.score_speed_text li{
+    float:left;
+}
+
+.score_speed_text .speed_01{
+    width:114px;
+    text-indent:26px;
+}
+
+.score_speed_text .speed_02{
+    width:82px;
+}
+
+.score_speed_text .speed_03{
+    width:76px;
+}
+
+.score_speed_text .speed_04{
+    width:65px;
+}
+
+.score_num{
+    position:absolute;
+    left:94%;
+    top:-21px;
+    width:25px;
+    height:14px;
+    background-color:#7F7F7F;
+    text-align:center;
+    color:#FFF;
+}
+
+.score_num i{
+    border-width:4px;
+    border-style:solid dashed dashed dashed;
+    border-color:#7F7F7F transparent transparent transparent;
+    width:0;
+    height:0;
+}
+
+/*不满切换*/
+.review_tab{
+    height:32px;
+    background-color:#F2F2F2;
+}
+
+.review li{
+    float:left;
+    height:100%;
+    margin-right:40px;
+}
+
+.review{
+    line-height:32px;
+    height:100%;
+    padding-left:20px;
+}
+
+.review_list{
+    padding-top:18px ;
+    margin-bottom:10px;
+    border: 1px solid gold;
+    border-radius: 5px;
+}
+
+.review li a{
+    display:inline-block;
+    height:31px;
+    padding:0 5px;
+}
+
+.review .active{
+    color:#317DE6;
+    font-weight:bold;
+    border-bottom:2px solid #317DE6;
+}
+.review_sort a{
+    display:inline-block;
+    height:20px;
+    line-height:20px;
+    border:1px solid #CCC;
+    padding:0 20px 0 6px;
+    background:url("../icon/down.png") 58px center no-repeat;
+}
+
+.review_sort{
+    padding:5px;
+}
+
+.review_userHead{
+    hright:170px;
+}
+
+.review_user{
+    width:60px;
+    text-align:center;
+    margin-left:60px;
+}
+
+.review_user img{
+    width:60px;
+    height:60px;
+    display:block;
+
+}
+
+.review_user p{
+    line-height:20px;
+}
+
+.review_cont{
+    padding-left:170px;
+    margin-bottom: 10px;
+}
+
+.starts_text{
+    font-weight:bold;
+    padding-left:10px;
+}
+
+.startBox .start{
+    margin-top:1px;
+}
+
+.review_t{
+    height:30px;
+}
+
+.review_cont p{
+    line-height:30px;
+}
+.bookhref{}
+
+.infodiv{
+    width: 400px;
+    height: 300px;
+    display: none;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -150px;
+    position: fixed;
+    top: 50%;
+    z-index: 25;
+    border: 2px solid lightgreen;
+    border-radius: 5px;
+}
+.infodiv .success{
+    width:200px;
+    height:200px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.infodiv p{color: #D70000; font-size: 20px; width: 400px; text-align: center;height: 30px; line-height: 30px; text-align: center}
+.infodiv a :hover{ border: 1px solid silver}
+
+.infodiv-1{
+    width: 400px;
+    height: 300px;
+    display: none;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -150px;
+    position: fixed;
+    top: 50%;
+    z-index: 25;
+    border: 2px solid lightgreen;
+    border-radius: 5px;
+}
+.infodiv-1 .success{
+    width:200px;
+    height:200px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.infodiv-1 p{color: #D70000; font-size: 20px; width: 400px;height: 30px; line-height: 30px;}
+.infodiv-1 a :hover{ border: 1px solid silver}
+
+.shopCarTitle{ height:50px; width:calc(100% - 200px); background-color: silver; text-align: center; line-height: 50px;margin-left: 100px;opacity: 0.8}
+.shopCarTitle  .checkall{ border: 1px solid silver; border-radius: 3px; height: 20px; line-height: 20px; float:left;margin-top: 15px; margin-left: 30px}
+.shopCarTitle p{float: left; margin-left: 100px;}
+
+.goodsContainer{
+    height: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    overflow: auto;
+}
+.goodsContainer .goods{height: 100px; width: calc(100% - 2px);  border: 1px solid silver; }
+.goods input{border: 1px solid silver; border-radius: 3px; height: 20px; line-height: 20px; float:left;margin-top: 15px;margin-left: -20px }
+.goods img{ margin-left:-50px; width: 80px; height: 90px;float: left; margin-top: 5px}
+
+.selectedNumber{float: right; margin-right: 40px;height: 50px;font-size: 20px;margin-top: 8px;width: 200px ; position: relative}
+.selectedNumber .reduction {
+    position: relative;
+    float: left;
+    height: 30px;
+    width:20px;
+    text-align:center;
+    line-height:32px;
+    color:#333;
+    border: 1px solid lightgray;
+    margin-left: 20px;
+}
+.selectedNumber .plus{
+    float: left;
+    height: 30px;
+    width:20px;
+    text-align:center;
+    line-height:32px;
+    color:#333;
+    border: 1px solid lightgray;
+    margin-left: 10px;
+}
+.selectedNumber .selectNumber{ width: 30px; height: 30px; text-align: center; line-height: 30px;margin-left: 10px}
+
+.goods span{ margin-top: 20px; width: 40px; float:right; margin-right: 120px;}
+
+.totalInfo{ bottom: 0px; width: 100%; height: 70px; position: fixed; background-color: white; line-height: 70px;}
+.totalInfo .checkall{ border: 1px solid silver; border-radius: 3px; height: 20px; line-height: 20px; float:left;margin-top: 25px; }
+.totalInfo .totalbutton{width: 100px; height: 66px; border: 1px solid silver; border-radius: 5px;float: right; margin-right: 150px;color: white;background-color: #D70000}
+
+
+.totalInfo-1{ bottom: 0px; height: 70px; background-color: silver;opacity: 0.9;margin-top: 30px; line-height: 70px;margin-left: 100px; margin-right: 100px;}
+.totalInfo-1 .checkall{ border: 1px solid silver; border-radius: 3px; height: 20px; line-height: 20px; float:left;margin-top: 25px; }
+.totalInfo-1 .totalbutton{width: 100px; height: 66px; border: 1px solid silver; border-radius: 5px;float: right; margin-right: 150px;color: white;background-color: #D70000}
+
+.stepBox{width:472px;margin-top:26px;}
+
+.steps {width: 760px;height: 95px;position: relative;margin: 0 auto;}
+.first {position: absolute;width: 230px;height: 95px;position: absolute;top: 0;left: 0;}
+.first .big-circle {width: 33px;height: 33px;border-radius: 50%;background: #DBD8D8;position: absolute;left: 60px;top: 31px;text-align: center;}
+.first .min-circle, .second .min-circle, .third .min-circle, .fourth .min-circle {width: 23px;height: 23px;border-radius: 50%;display: inline-block;margin-top: 5px;text-align: center;line-height: 23px;color: #fff;font-size: 14px;font-weight: bold;background: #999;}
+.round_active {background: #02994C !important;}
+.first .title {position: absolute;top: 0;left: 50px;line-height: 24px;color: #8A8A8A;}
+.first .tame {position: absolute;left: 5px;bottom: 0;color: #A19F9D;font-size: 14px;}
+.first .big-line {width: 186px;height: 10px;background: #DDDEDE;position: absolute;left: 88px;top: 42px;text-align: center;z-index: 999;}
+.first .min-line, .second .min-line, .third .min-line, .fourth .min-line {width: 190px;height: 4px;margin-top: 3px;background: #999;}
+.line_active {background: #02994C !important;}
+.second {width: 210px;position: absolute;top: 0;left: 230px;height: 95px;}
+.second .big-circle, .third .big-circle, .fourth .big-circle {width: 33px;height: 33px;border-radius: 50%;background: #DBD8D8;position: absolute;left: 43px;top: 31px;text-align: center;
+}
+.second .title, .fourth .title, .third .title {position: absolute;top: 0;left: 30px;line-height: 24px;color: #8A8A8A;}
+.second .tame, .third .tame, .fourth .tame {position: absolute;left: -10px;bottom: 0;color: #A19F9D;font-size: 14px;}
+.second .big-line, .third .big-line, .fourth .big-line {width: 186px;height: 10px;background: #DDDEDE;position: absolute;left: 71px;top: 42px;text-align: center;z-index: 999;}
+.third {width: 210px;position: absolute;top: 0;left: 440px;height: 95px;}
+.fourth {width: 210px;position: absolute;top: 0;left: 648px;height: 95px;}
+
+.calculate{margin-left: 150px; margin-right: 150px; width: calc(100% - 320px); border:1px solid silver;border-radius: 5px; margin-top: 50px;height: auto;overflow: auto}
+.address{border-bottom: 1px solid silver; margin-left: 30px;font-family: 微软雅黑; font-size: 14px;margin-bottom: 30px}
+.calculate h4{ font-family: 微软雅黑; font-size: 20px;margin-bottom: 10px }
+.address .name{ width: 150px;height: 30px; border: 1px solid silver; text-align: center}
+.address .activeAddress{width: 150px;height: 30px; border: 1px solid red; text-align: center}
+.address .unactiveAddress{width: 150px;height: 30px; border: 1px solid silver; text-align: center}
+.name{ width: 150px;height: 30px; border: 1px solid red; text-align: center}
+.address label{opacity: 0.8; font-size: 14px;}
+.address .addAddress{width: 150px; margin-right: 50px;background-color: lightcoral;; float: right}
+.addaddressdiv{position: fixed; width: 400px;height: 400px; top: 50%; left: 50%; margin-left: -200px; margin-top: -200px; border: 3px solid silver; border-radius: 5px; display: none;background-color: #fff;z-index: 25;}
+#distpicker1 select{width: 100px;border: 1px solid silver}
+
+.selectpayment{border-bottom: 1px solid silver; margin-left: 30px;font-family: 微软雅黑; font-size: 14px;margin-bottom: 30px}
+.selectpayment h4{ font-family: 微软雅黑; font-size: 20px;margin-bottom: 10px;width:100% }
+.selectpayment input{ width: 200px; border: 1px solid silver; border-radius: 3px; opacity: 0.8; color: black;margin-bottom: 20px}
+.selectpayment .activeBtn{border: 2px solid red;}
+
+.DetailedList{border-bottom: 1px solid silver; margin-left: 30px;font-family: 微软雅黑; font-size: 14px;margin-bottom: 30px; height: auto;overflow: auto}
+.DetailedList h4{ font-family: 微软雅黑; font-size: 20px;margin-bottom: 10px;width:100% }
+.DetailedList img{width: 150px; height: 170px;float: left}
+
+.orderInfo{margin-left: 150px; margin-right: 150px;width: calc(100% - 320px);height: auto; border: 1px solid silver; border-radius: 5px;margin-top: 30px; overflow: auto}
+.orderInfo p{  font-family: 微软雅黑; font-size: 14px;margin-top: 10px}
+.orderInfo a:hover{ color: #D70000}
+
+.goodsList{font-family: 微软雅黑; font-size: 14px; opacity: 0.8}
+
+.payment{margin-top: 50px; margin-left: 150px; margin-right: 150px; width: calc(100% - 320px); font-family: 微软雅黑; font-size: 14px;height: auto;overflow: auto;border: 1px solid silver; border-radius: 5px;}
+.payment img{ width: 30px; height: 30px;margin-left: 10px;margin-top: 5px;}
+.payment .active{ border: 1px solid red;}
+
+.wechatPay{ margin-left: 30px; margin-right: 30px; border-bottom: 1px solid silver;height: 40px}
+.AliPay{ margin-left: 30px; margin-right: 30px; border-bottom: 1px solid silver;height: 40px;}
+.CardPay { margin-left: 30px; margin-right: 30px; border-bottom: 1px solid silver;height: 40px}
+.pwd{margin-left: 30px; margin-right: 30px; border-bottom: 1px solid silver;height: 40px ;margin-top: 100px; height: auto}
+.pwdArea{border: 2px solid silver; width: 300px; height: 50px;margin-left: 100px;margin-top: 10px;}
+.pwdArea input{width: 48px; border-right: 1px solid silver; float: left;height: 45px; margin-top: 2px;text-align: center;font-size: 16px}
+
+.payResult{ width: 400px; height: 300px; position: fixed;  top: 50%; left: 50%; margin-top: -150px;margin-left: -200px;border: 1px solid silver;display: none;z-index: 50; background-color: white}
+.payResult img{ width: 200px; height: 200px; margin: 30px 0 0 100px; }
+.payResult label{ font-family: 微软雅黑; font-size: 18px;color: #D70000; text-align: center; margin-top: 10px; margin-left: 160px}
+
+.orderList{ margin-left: 150px; margin-right: 150px; width: calc(100% - 320px); border: 1px solid silver; border-radius: 5px;height: auto; overflow: auto; opacity: 0.8;margin-top: 30px; padding:20px 30px 30px 30px;}
+.orderListTitle{margin-bottom: 10px; width: 100%}
+.orderListTitle a{float: left; width: 80px; color: black;margin-left: 20px; font-size: 14px;font-family: 微软雅黑; margin-bottom: 20px}
+.orderListTitle a:hover{color: #D70000}
+.orderListTitle .active{ color: #D70000}
+.orderListTitle-1{margin-top: 10px;margin-bottom: 10px; width: calc(100% - 10px); background-color: silver;border: 1px silver solid; border-radius: 3px;height: 50px; overflow: auto; line-height: 50px}
+.orderListTitle-1 label{ float: right; margin-right: 50px; width: 80px;}
+
+.order{width: calc(100% - 10px); border:1px silver solid; border-radius: 2px; height:auto; overflow: auto}
+.order .OrderTitle{ width: calc(100% - 2px); background-color: lightcyan;border: 1px lightcyan solid; border-radius: 3px;height: 30px; overflow: auto; line-height: 30px;}
+.OrderTitle label{margin-left: 30px;}
+.order .operation{width: 100px;border-right: 1px silver solid;padding: 20px 10px 0px 30px;float: right; height: 100%}
+.order .operation a{width: 55px; }
+.order .status{width: 100px;border-right: 1px silver solid;padding: 20px 10px 0px 20px;float: right;height: 100%}
+.order .owner{width: 100px;border-right: 1px silver solid;padding: 20px 10px 0px 20px;float: right;height: 100%}
+.owner img{width: 20px; height: 20px;}
+.order .count{width: 100px;border-right: 1px silver solid;padding: 20px 10px 0px 20px;float: right;height: 100%}
+.count label{width: 80px;float: left; line-height: 100%; margin-left: 30px}
+
+.order .goodsInfo{float: left}
+.goodsInfo img{ width: 50px; height: 60px;margin-bottom: 20px ; margin-left: 20px;float: left;margin-top: 10px;}
+.goodsInfo a{float: left; margin-left: 10px;margin-top: 10px}
+.goodsInfo a:hover{ color: #D70000}
+
+.orderItem{border: 1px solid silver; }
+
+
+.commentTitle{width: 100%; height: 50px; line-height: 50px; font-family: 微软雅黑; opacity: 0.8; text-align: center}
+
+.express{ margin: 50px 50px 30px 50px; padding: 20px 30px 10px 30px; border: 1px silver solid; height: auto; overflow: auto; opacity: 0.68}
+.express .expressInfo{width: 350px; float: left; border-right: 1px solid silver;}
+.expressInfo img{width: 80px; height: 80px; float: left}
+.expressInfo h3{float: left; line-height: 50px;}
+
+.comment{font-size: 30px;color: orange; line-height: 60px; float: left}
+.comment li{float: left;cursor: pointer;}
+.express span{float: left; line-height: 60px; margin-right: 10px}
+.express label{float: left; line-height: 60px; margin-left: 5px}
+.comment ul{list-style: none;}
+
+.expressStarts .package{ width: 250px; padding: 20px 10px 20px 10px; float: left; margin-left: 20px;}
+.expressStarts .expressSpeed{width: 250px; padding: 20px 20px 20px 20px; float: left;margin-left: 30px }
+
+.goodsComment{margin: 30px 50px 30px 50px; padding: 20px 30px 20px 30px; border: 1px silver solid; height: 500px; opacity: 0.8}
+.goodsComment .left{width: 350px; float: left; border-right: 1px solid silver;height: 350px}
+.left img{width: 150px;height: 170px;margin: 30px 0 20px 75px;}
+.left label{width: 340%; margin-top: 10px; text-align: center;height: 20px; line-height: 20px;}
+
+.goodsComment .right{width:calc(100% - 425px); height: 350px;padding: 20px 30px 20px 30px;;float: right}
+.right span{float: left; height: 60px; line-height: 60px;font-size: 14px; margin-right: 20px; margin-left: 30px}
+.right label{float: left; line-height: 60px; margin-left: 10px; font-size: 14px;}
+
+.goods-grade{width: calc(100% - 70px); }
+
+.select-grade ul{width: calc(100% - 70px); margin-top: 30px;}
+.select-grade li{float: left; width: 100px; border: 1px silver solid; text-align: center; height: 30px; line-height: 30px; margin-right: 20px;}
+.select-grade a{width: 80px;}
+.select-grade .active{border: 1px solid red;}
+
+.select-grade a{font-family: 微软雅黑; color: black}
+
+.Comment-Area {width: calc(100% - 70px);}
+.Comment-Area label{float: left; line-height: 60px; margin-left: 10px; font-size: 14px;}
+.Comment-Area textarea{height: 150px; width: calc(100% - 100px); border: 1px silver solid;margin-top: 20px;}
+
+.POSTDIV{width: calc(100% - 70px); float: left;height: 80px; line-height: 80px; margin: 30px 0 0px 0;text-align: center }
+.POSTDIV input{width: 200px; height: 40px;font-family: 微软雅黑; font-size: 20px; color: white; border: 2px solid red;background-color: #D70000}
+

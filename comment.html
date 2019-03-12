@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单中心</title>
+    <link rel="icon " href="icon/favicon.ico">
+
+    <!--css代码-->
+    <link href="css/market.css" rel="stylesheet" type="text/css">
+    <!--jquery库-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!--js代码-->
+    <script src="js/common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/js/distpicker.data.js"></script>
+    <script type="text/javascript" src="js/js/distpicker.js"></script>
+    <script type="text/javascript" src="js/js/main.js"></script>
+</head>
+<body>
+<div class="headerBar">
+    <div class="topBar">
+        <div class="comWidth">
+            <div class="leftArea">
+                <a id='hello'  href="login.html" class="link-login">您好，<span>请登录</span></a>&nbsp;&nbsp;
+                <a id='hello2'  href="registe.html" class="link-regist style-red">免费注册</a>
+            </div>
+            <div class="rightArea">
+                <ul class="fr">
+                    <span class="fore1" ><a target="_blank" href="shopcar.html" style="text-align: center"><img class='shopCar' src="icon/shopCar.png">购物车</a></span>
+                    <span class="fore1" ><a target="_blank" href="order.html">我的订单</a></span>
+                    <span class="fore1" ><a href="account.html">个人中心</a></span>
+                </ul>
+            </div>
+        </div>
+    </div><!--topBar结束-->
+    <div class="logoBar">
+        <div class="comWidth">
+            <div class="logo fl">
+                <a href="index.html"><img class='company_logo'src="images/logo.jpg" alt="XX网"/></a>
+            </div>
+            <div class="searchBox fl">
+                <input type="text" class="search_text fl" id="key">
+                <!--<input type="submit" value="搜索" class="search_btn fr"/>-->
+                <button class='search_btn'>搜索</button>
+            </div>
+        </div>
+    </div><!--logoBar结束-->
+</div>
+
+<div class="commentTitle">
+    <h2>评价订单</h2>
+    <label>订单号：<span><b>82578481600</b></span><span style="margin-left: 30px"> 2018-11-30 10:25:14</span></label>
+</div>
+
+<div class="express">
+    <div class="expressInfo">
+        <img src="icon/物流.png">
+        <h3>物流服务评价</h3>
+    </div>
+    <div class="expressStarts">
+        <div class="package">
+            <span>快递包装:</span>
+            <ul class="comment">
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+            </ul>
+            <label>0分</label>
+        </div>
+        <div class="expressSpeed">
+            <span>物流速度:</span>
+            <ul class="comment">
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+            </ul>
+            <label>0分</label>
+        </div>
+    </div>
+</div>
+
+<div class="goodsComment">
+    <div class="left">
+        <img src="images/计算机组成原理.jpg">
+        <br>
+        <label>计算机组成原理 高等教育出版社 第三部 罗克著</label>
+    </div>
+    <div class="right">
+        <div class="goods-grade">
+            <span>商品评分：</span>
+            <ul class="comment">
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+                <li>☆</li>
+            </ul>
+            <label>0分</label>
+        </div><br><br><br><br>
+        <div class="select-grade">
+            <span style="height: 30px ;line-height: 30px">买家印象：</span>
+            <ul>
+                <li><a href="javascrit:void(0);">书很新</a></li>
+                <li><a href="javascrit:void(0);">是正品</a></li>
+                <li><a href="javascrit:void(0);">很少有字迹</a></li>
+                <li><a href="javascrit:void(0);">书没有异味</a></li>
+            </ul>
+        </div><br><br><br><br>
+        <div class="Comment-Area">
+            <span>评价</span>
+            <textarea placeholder="分享心得体会，给想买的人一个参考~"></textarea>
+        </div>
+    </div>
+    <div class="POSTDIV">
+        <input type="button" value="发表">
+    </div>
+</div>
+
+<div class="infodiv">
+    <img class="success" src="icon/完成.png">
+    <br>
+    <p>评论成功！</p>
+    <a class="cancel"><input type="button" style="float: left;margin-left: 30px;" value="继续购物"></a>
+    <a href="order.html"><input type="button" style="float: right;margin-right: 30px;" value="前往订单中心"></a>
+</div>
+
+<div class="back-to-top" style="display:none"><a>返回<br />顶部</a></div>
+
+<div class="footer">
+    <p><a href="#">网站简介</a><i>|</i><a href="#">公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i> <a href="#">联系我们</a><i>|</i>客服热线：400-675-1234</p>
+    <p>Copyright &copy; 2007 - 2018 版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+</div>
+
+</body>
+</html>
+
+<script>
+    jQuery(function ($) {
+        //当滚动条的位置处于距顶部20像素以下时，跳转链接出现，否则消失
+        $(window).scroll(function(){
+            if (jQuery(window).scrollTop()>20){
+                jQuery(".back-to-top").fadeIn(2000);
+            }
+            else
+            {
+                jQuery(".back-to-top").fadeOut(2000);
+            }
+        });
+
+        //当点击跳转链接后，回到页面顶部位置
+
+        jQuery(".back-to-top").click(function(){
+            jQuery('body,html').animate({scrollTop:0},200);
+            return false;
+        });
+    });
+    $(document).ready(function () {
+        var name=sessionStorage.getItem('name');
+        if(name!==null&&(name)!==undefined){
+            if((/^[a-zA-Z0-9]{6,11}$/).test(name)){
+                $('#hello2').hide();
+                $('#hello  ').html('您好，'+name);
+            }
+        }
+    });
+
+    $(function(){
+        var wjx_none = '☆'; // 空心五角星
+        var wjx_sel = '★'; // 实心五角星
+        var index=0
+
+        //鼠标移进变实星
+        $(".comment li").on("mouseover",function(){
+            $(this).text(wjx_sel).prevAll("li").
+            text(wjx_sel).end().nextAll().text(wjx_none);
+            index=$(this).index()
+            index=index+1
+            $(this).parent().next().text(index+" 分")
+        });
+
+        //鼠标移出变空星
+        $(".comment li").on("mouseout",function(){
+            if($("li.current").length === 0){
+                $(".comment li").text(wjx_none);
+            }else{
+                $("li .current").text(wjx_sel).prevAll().text(wjx_sel).end().nextAll().text(wjx_none);
+            }
+        });
+        //鼠标点击保持当前状态
+        $(".comment li").on("click",function(){
+            $(this).attr("class","current").siblings().removeClass("current");
+        });
+    });
+
+    $('.select-grade a').click(function () {
+        if($(this).parent().hasClass('active')){
+            $(this).parent().removeClass('active')
+        }
+        else{
+            $(this).parent().addClass('active')
+        }
+    });
+
+    $('.POSTDIV').click(function () {
+        var package= $('.package label:eq(0)').val().split('分')[0]
+        var speed= $('.expressSpeed label:eq(0)').val().split('分')[0]
+        var comment= $('.Comment-Area textarea').text()
+
+        $.ajax({
+            type:'post',
+            url:'orders.json',
+            dataType: 'json',
+            success:function () {
+                $('.infodiv').show()
+            }
+        })
+
+    });
+    $('.cancel').click(function () {
+        window.location.href='index.html'
+    })
+
+</script>
